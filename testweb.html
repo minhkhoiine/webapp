@@ -1,26 +1,13 @@
 <!DOCTYPE html>
 <html>
-  
+<head>
+    <title>File Upload</title>
+</head>
 <body>
-    <h1>Show File-select Fields</h1>
-  
-    <h3>
-        Show a file-select field which allows
-        multiple files to be chosen:
-    </h3>
-  
-    <form action="/action_page.php" 
-        enctype="multipart/form-data">
-  
-        <label for="myfile">Select a file:</label>
-  
-        <input type="file" id="myfile" 
-            name="myfile" multiple="multiple" />
-          
-        <br /><br />
-      
-        <input type="submit" />
+    <h1>Upload a File</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept="*">
+        <input type="submit" value="Upload">
     </form>
 </body>
-  
 </html>
